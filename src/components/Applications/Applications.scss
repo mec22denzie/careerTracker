@@ -1,0 +1,152 @@
+.application-card {
+  background: #d9d0ea;
+  border-radius: 12px;
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+  border-left: 6px solid #8b5cf6;
+  box-shadow: 0 4px 12px rgba(59, 35, 90, 0.12);
+}
+.applications__title {
+  margin-bottom: 1.5rem;
+  color: #3B235A;
+}
+
+.application-card__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.application-card__title {
+  color: #2e1b47;
+  font-size: 1.4rem;
+  margin: 0;
+  font-weight: 700;
+}
+
+.application-card__company {
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: #6a4fa3;
+  margin-bottom: 1rem;
+}
+
+.application-card__detail {
+  margin-bottom: 0.6rem;
+  color: #1f1b2e;
+  line-height: 1.6;
+}
+
+.application-card__detail strong {
+  color: #3b235a;
+}
+
+.applications__clear {
+  background-color: #6a4fa3;
+  color: #e9e4f5;
+  border: none;
+  border-radius: 8px;
+  padding: 0.65rem 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.applications__clear:hover {
+  background-color: #8b5cf6;
+  color: #2e1b47;
+}
+
+/* Status badges */
+.application-card__badge {
+  padding: 0.45rem 0.95rem;
+  border-radius: 999px;
+  color: #f5f1fb;
+  font-size: 0.82rem;
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+.application-card__badge--saved {
+  background-color: #7c6f96;
+}
+
+.application-card__badge--applied {
+  background-color: #6a4fa3;
+}
+
+.application-card__badge--interview {
+  background-color: #8b5cf6;
+}
+
+.application-card__badge--assessment {
+  background-color: #5b3c88;
+}
+
+.application-card__badge--offer {
+  background-color: #4c956c;
+}
+
+.application-card__badge--rejected {
+  background-color: #c2416c;
+}
+
+/* Buttons */
+.application-card__actions {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.application-card__statusButton,
+.application-card__removeButton {
+  border: none;
+  border-radius: 8px;
+  padding: 0.75rem 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.application-card__statusButton {
+  background-color: #6a4fa3;
+  color: #e9e4f5;
+}
+
+.application-card__statusButton:hover {
+  background-color: #8b5cf6;
+  color: #2e1b47;
+}
+
+.application-card__removeButton {
+  background-color: #b04b76;
+  color: #fff;
+}
+
+.application-card__removeButton:hover {
+  background-color: #8f2d56;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .application-card {
+    padding: 1.25rem;
+  }
+
+  .application-card__header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .application-card__actions {
+    flex-direction: column;
+  }
+
+  .application-card__statusButton,
+  .application-card__removeButton {
+    width: 100%;
+  }
+}
